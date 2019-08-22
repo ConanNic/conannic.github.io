@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Git相关]]></title>
+    <url>%2F2019%2F08%2F22%2FGit%E7%9B%B8%E5%85%B3%2F</url>
+    <content type="text"><![CDATA[Git教程 Git常用命令 gitlab自建局域网仓库 12#安装完成后，把external_url改成部署机器的域名或者IP地址。sudo vim /etc/gitlab/gitlab.rb]]></content>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[swift库整理]]></title>
-    <url>%2F2019%2F08%2F16%2Fswift%E5%BA%93%E6%95%B4%E7%90%86%2F</url>
+    <url>%2F2019%2F08%2F16%2FSwift%E5%BA%93%E6%95%B4%2F</url>
     <content type="text"><![CDATA[优秀库整理 列表框架 :IGListKit 数据库框架 :Realm 网路请求封装框架:Moya Json处理框架:SwiftyJSON 钥匙串读写框架:KeychainAccess 异步渲染框架:Texture 文件操作框架:FileKit 设备信息与机型框架:DeviceKit 图表框架:Charts 内购框架:SwiftyStoreKit 加密框架:CryptoSwift 异步框架:PromiseKit 特效文本输入框框架:TextFieldEffects 视图动画:ViewAnimator 网络检测:Reachability.swift 键盘遮挡:IQKeyboardManager 弹窗:PopupDialog 评分星星:Cosmos 控制路由:URLNavigator 安卓MaterialUI素材:Material 上下拉:pull-to-refresh 动画TabBarController:ESTabBarController 日历:FSCalendar IB动画:IBAnimatable 分页标题菜单:XLPagerTabStrip 二维码生成:EFQRCode 滚动动画:Gemini 显示gif库:Gifu 动作label:ActiveLabel 字体库:UIFontComplete 版本更新提示:Siren swift扩展库:SwifterSwift 动态效果label:LTMorphingLabel 自动布局:Cartography 其他未收集整理库]]></content>
       <tags>
         <tag>iOS</tag>
