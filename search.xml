@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[树莓派版本查询]]></title>
+    <url>%2F2019%2F08%2F26%2F%E6%A0%91%E8%8E%93%E6%B4%BE%E7%89%88%E6%9C%AC%E6%9F%A5%E8%AF%A2%2F</url>
+    <content type="text"><![CDATA[示例 12代号 型号 版本 内存 生产工厂a020d3 3B+ 1.3 1GB Sony UK Raspberry Pi 树莓派已经发布了很多个版本。每一版树莓派都有唯一的版本代号，通过下面这行命令可以查看这个代号： 1cat /proc/cpuinfo 最后三行表示主板的硬件型号、版本代号和唯一的序列号。例如： 123Hardware : BCM2835Revision : a02082Serial : 00000000765fc593 树莓派各型号]]></content>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Raspberrypi</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[定时执行任务Crontab]]></title>
     <url>%2F2019%2F08%2F22%2F%E5%AE%9A%E6%97%B6%E6%89%A7%E8%A1%8C%E4%BB%BB%E5%8A%A1Crontab%2F</url>
     <content type="text"><![CDATA[编辑定时任务 123crontab -e# 查看crontab服务状态sudo service cron status crontab计算时间工具]]></content>
