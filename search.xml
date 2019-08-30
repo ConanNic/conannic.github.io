@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[apt-get相关命令]]></title>
+    <url>%2F2019%2F08%2F30%2Fapt-get%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[123456789101112131415161718apt-get install PackageName // 普通安装apt-get --reinstall install PackageName // 重新安装apt-get build-dep PackageName // 安装相关的编译环境apt-get -f install // 修复安装apt-get source PackageName // 下载软件包的源码# 卸载apt-get remove PackageName // 保留配置文件apt-get --purge remove PackageName // 删除配置文件apt-get clean &amp;&amp; apt-get autoclean // 清理无用的包apt-get update // 更新源apt-get upgrade // 更新已安装的软件包apt-get dist-upgrade // 升级系统dpkg -l // 列出已安装的所有软件包apt-cache search PackageName // 搜索软件包apt-cache show PackageName // 获取软件包的相关信息, 如说明、大小、版本等apt-cache depends PackageName // 查看该软件包需要哪些依赖包apt-cache rdepends PackageName // 查看该软件包被哪些包依赖apt-get check // 检查是否有损坏的依赖]]></content>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[树莓派版本查询]]></title>
     <url>%2F2019%2F08%2F26%2F%E6%A0%91%E8%8E%93%E6%B4%BE%E7%89%88%E6%9C%AC%E6%9F%A5%E8%AF%A2%2F</url>
     <content type="text"><![CDATA[示例 12代号 型号 版本 内存 生产工厂a020d3 3B+ 1.3 1GB Sony UK Raspberry Pi 树莓派已经发布了很多个版本。每一版树莓派都有唯一的版本代号，通过下面这行命令可以查看这个代号： 1cat /proc/cpuinfo 最后三行表示主板的硬件型号、版本代号和唯一的序列号。例如： 123Hardware : BCM2835Revision : a02082Serial : 00000000765fc593 树莓派各型号]]></content>

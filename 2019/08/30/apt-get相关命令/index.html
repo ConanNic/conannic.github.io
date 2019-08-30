@@ -13,6 +13,8 @@
     
 
     
+        <meta name="description" content="123456789101112131415161718apt-get install PackageName                 // 普通安装apt-get --reinstall install PackageName     // 重新安装apt-get build-dep Pac">
+    
 
     <!--Author-->
     
@@ -21,10 +23,12 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="ConanNic">
+        <meta property="og:title" content="apt-get相关命令">
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="123456789101112131415161718apt-get install PackageName                 // 普通安装apt-get --reinstall install PackageName     // 重新安装apt-get build-dep Pac">
     
 
     <!--Open Graph Site Name-->
@@ -32,7 +36,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -51,7 +55,7 @@
 
     <!-- Title -->
     
-    <title>Linux - ConanNic</title>
+    <title>apt-get相关命令 - ConanNic</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -121,88 +125,74 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('https://upload.cc/i1/2019/08/16/eLm6jx.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>#Linux</h1>
+                <div class="post-heading">
+                    <h1>apt-get相关命令</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-08-30
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Linux/">#Linux</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
             
-                <div class="post-preview">
-    <a href="/2019/08/30/apt-get相关命令/">
-        <h1 class="post-title archive">
-            apt-get相关命令
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-08-30
-    </p>
-</div>
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/2019/08/26/树莓派版本查询/">
-        <h1 class="post-title archive">
-            树莓派版本查询
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-08-26
-    </p>
-</div>
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">apt-get install PackageName                 // 普通安装</span><br><span class="line">apt-get --reinstall install PackageName     // 重新安装</span><br><span class="line">apt-get build-dep PackageName               // 安装相关的编译环境</span><br><span class="line">apt-get -f install                          // 修复安装</span><br><span class="line">apt-get source PackageName                  // 下载软件包的源码</span><br><span class="line"># 卸载</span><br><span class="line">apt-get remove PackageName                  // 保留配置文件</span><br><span class="line">apt-get --purge remove PackageName          // 删除配置文件</span><br><span class="line">apt-get clean &amp;&amp; apt-get autoclean          // 清理无用的包</span><br><span class="line">apt-get update                              // 更新源</span><br><span class="line">apt-get upgrade                             // 更新已安装的软件包</span><br><span class="line">apt-get dist-upgrade                        // 升级系统</span><br><span class="line">dpkg -l                                     // 列出已安装的所有软件包</span><br><span class="line">apt-cache search PackageName                // 搜索软件包</span><br><span class="line">apt-cache show PackageName                  // 获取软件包的相关信息, 如说明、大小、版本等</span><br><span class="line">apt-cache depends PackageName               // 查看该软件包需要哪些依赖包</span><br><span class="line">apt-cache rdepends PackageName              // 查看该软件包被哪些包依赖</span><br><span class="line">apt-get check                               // 检查是否有损坏的依赖</span><br></pre></td></tr></table></figure>
+
+
+
+                
+            </div>
+
+            <!-- Comments -->
             
-                <div class="post-preview">
-    <a href="/2019/08/22/定时执行任务Crontab/">
-        <h1 class="post-title archive">
-            定时执行任务Crontab
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-08-22
-    </p>
-</div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
             
-                <div class="post-preview">
-    <a href="/2019/08/22/磁盘操作/">
-        <h1 class="post-title archive">
-            磁盘操作
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-08-22
-    </p>
-</div>
-            
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-    
-</ul>
         </div>
     </div>
-</div>
-
+</article>
 
     <!-- Footer -->
     <hr />
