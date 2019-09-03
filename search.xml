@@ -1,144 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>tar相关命令</title>
-      <link href="/2019/08/30/tar%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/"/>
-      <url>/2019/08/30/tar%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>tar</p></blockquote><p><a href="https://www.cnblogs.com/ftl1012/p/9255795.html" target="_blank" rel="noopener">tar命令详解</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tar jcf hhh.tar.bz2 hhh #压缩</span><br><span class="line">tar –xvf file.tar #解压 tar包</span><br><span class="line">tar -xzvf file.tar.gz #解压tar.gz</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>apt-get相关命令</title>
-      <link href="/2019/08/30/apt-get%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/"/>
-      <url>/2019/08/30/apt-get%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</url>
-      
-        <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">apt-get install PackageName                 // 普通安装</span><br><span class="line">apt-get --reinstall install PackageName     // 重新安装</span><br><span class="line">apt-get build-dep PackageName               // 安装相关的编译环境</span><br><span class="line">apt-get -f install                          // 修复安装</span><br><span class="line">apt-get source PackageName                  // 下载软件包的源码</span><br><span class="line"># 卸载</span><br><span class="line">apt-get remove PackageName                  // 保留配置文件</span><br><span class="line">apt-get --purge remove PackageName          // 删除配置文件</span><br><span class="line">apt-get clean &amp;&amp; apt-get autoclean          // 清理无用的包</span><br><span class="line">apt-get update                              // 更新源</span><br><span class="line">apt-get upgrade                             // 更新已安装的软件包</span><br><span class="line">apt-get dist-upgrade                        // 升级系统</span><br><span class="line">dpkg -l                                     // 列出已安装的所有软件包</span><br><span class="line">apt-cache search PackageName                // 搜索软件包</span><br><span class="line">apt-cache show PackageName                  // 获取软件包的相关信息, 如说明、大小、版本等</span><br><span class="line">apt-cache depends PackageName               // 查看该软件包需要哪些依赖包</span><br><span class="line">apt-cache rdepends PackageName              // 查看该软件包被哪些包依赖</span><br><span class="line">apt-get check                               // 检查是否有损坏的依赖</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>树莓派版本查询</title>
-      <link href="/2019/08/26/%E6%A0%91%E8%8E%93%E6%B4%BE%E7%89%88%E6%9C%AC%E6%9F%A5%E8%AF%A2/"/>
-      <url>/2019/08/26/%E6%A0%91%E8%8E%93%E6%B4%BE%E7%89%88%E6%9C%AC%E6%9F%A5%E8%AF%A2/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>示例</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">代号    型号版本内存生产工厂</span><br><span class="line">a020d33B+1.31GBSony UK</span><br></pre></td></tr></table></figure><blockquote><p>Raspberry Pi 树莓派已经发布了很多个版本。每一版树莓派都有唯一的版本代号，通过下面这行命令可以查看这个代号：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /proc/cpuinfo</span><br></pre></td></tr></table></figure><blockquote><p>最后三行表示主板的硬件型号、版本代号和唯一的序列号。例如：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Hardware    : BCM2835</span><br><span class="line">Revision    : a02082</span><br><span class="line">Serial      : 00000000765fc593</span><br></pre></td></tr></table></figure><p><a href="http://shumeipai.nxez.com/raspberry-pi-revision-codes" target="_blank" rel="noopener">树莓派各型号</a></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
-            
-            <tag> Raspberrypi </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>定时执行任务Crontab</title>
-      <link href="/2019/08/22/%E5%AE%9A%E6%97%B6%E6%89%A7%E8%A1%8C%E4%BB%BB%E5%8A%A1Crontab/"/>
-      <url>/2019/08/22/%E5%AE%9A%E6%97%B6%E6%89%A7%E8%A1%8C%E4%BB%BB%E5%8A%A1Crontab/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>编辑定时任务</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">crontab -e</span><br><span class="line"># 查看crontab服务状态</span><br><span class="line">sudo service cron status</span><br></pre></td></tr></table></figure><p><a href="https://tool.lu/crontab/" target="_blank" rel="noopener">crontab计算时间工具</a></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>磁盘操作</title>
-      <link href="/2019/08/22/%E7%A3%81%E7%9B%98%E6%93%8D%E4%BD%9C/"/>
-      <url>/2019/08/22/%E7%A3%81%E7%9B%98%E6%93%8D%E4%BD%9C/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>显示当前主机目录</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df -h</span><br></pre></td></tr></table></figure><blockquote><p>fdisk操作</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fdisk -l  #显示磁盘</span><br><span class="line">fdisk /dev/sda  #分区sda</span><br></pre></td></tr></table></figure><blockquote><p>磁盘格式化</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkfs.ext4 /dev/sda1</span><br></pre></td></tr></table></figure><blockquote><p>手工挂载</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount /dev/xvdb1 /u01</span><br></pre></td></tr></table></figure><blockquote><p>开机自动挂载</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#/etc/fstab配置文件,末尾添加一行</span><br><span class="line">/dev/sda1  /u01  ext4    defaults  0 0</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Git相关</title>
-      <link href="/2019/08/22/Git%E7%9B%B8%E5%85%B3/"/>
-      <url>/2019/08/22/Git%E7%9B%B8%E5%85%B3/</url>
-      
-        <content type="html"><![CDATA[<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">Git教程</a></p><p><a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" rel="noopener">Git常用命令</a></p><blockquote><p>gitlab自建局域网仓库</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#安装完成后，把external_url改成部署机器的域名或者IP地址。</span><br><span class="line">sudo vim /etc/gitlab/gitlab.rb</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>swift库整理</title>
-      <link href="/2019/08/16/Swift%E5%BA%93%E6%95%B4/"/>
-      <url>/2019/08/16/Swift%E5%BA%93%E6%95%B4/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>优秀库整理</p></blockquote><ul><li>列表框架 :<br><a href="https://github.com/Instagram/IGListKit" target="_blank" rel="noopener">IGListKit</a></li><li>数据库框架 :<br><a href="https://github.com/realm/realm-cocoa" target="_blank" rel="noopener">Realm</a></li><li>网路请求封装框架:<br><a href="https://github.com/Moya/Moya" target="_blank" rel="noopener">Moya</a></li><li>Json处理框架:<br><a href="https://github.com/SwiftyJSON/SwiftyJSON" target="_blank" rel="noopener">SwiftyJSON</a></li><li>钥匙串读写框架:<br><a href="https://github.com/kishikawakatsumi/KeychainAccess" target="_blank" rel="noopener">KeychainAccess</a></li><li>异步渲染框架:<br><a href="https://github.com/texturegroup/texture/" target="_blank" rel="noopener">Texture</a></li><li>文件操作框架:<br><a href="https://github.com/nvzqz/FileKit" target="_blank" rel="noopener">FileKit</a></li><li>设备信息与机型框架:<br><a href="https://github.com/devicekit/DeviceKit" target="_blank" rel="noopener">DeviceKit</a></li><li>图表框架:<br><a href="https://github.com/danielgindi/Charts" target="_blank" rel="noopener">Charts</a></li><li>内购框架:<br><a href="https://github.com/bizz84/SwiftyStoreKit" target="_blank" rel="noopener">SwiftyStoreKit</a></li><li>加密框架:<br><a href="https://github.com/krzyzanowskim/CryptoSwift" target="_blank" rel="noopener">CryptoSwift</a></li><li>异步框架:<br><a href="https://github.com/mxcl/PromiseKit" target="_blank" rel="noopener">PromiseKit</a></li><li>特效文本输入框框架:<br><a href="https://github.com/raulriera/TextFieldEffects" target="_blank" rel="noopener">TextFieldEffects</a></li><li>视图动画:<br><a href="https://github.com/marcosgriselli/ViewAnimator" target="_blank" rel="noopener">ViewAnimator</a></li><li>网络检测:<br><a href="https://github.com/ashleymills/Reachability.swift" target="_blank" rel="noopener">Reachability.swift</a></li><li>键盘遮挡:<br><a href="https://github.com/hackiftekhar/IQKeyboardManager" target="_blank" rel="noopener">IQKeyboardManager</a></li><li>弹窗:<br><a href="https://github.com/Orderella/PopupDialog" target="_blank" rel="noopener">PopupDialog</a></li><li>评分星星:<br><a href="https://github.com/evgenyneu/Cosmos" target="_blank" rel="noopener">Cosmos</a></li><li>控制路由:<br><a href="https://github.com/devxoul/URLNavigator" target="_blank" rel="noopener">URLNavigator</a></li><li>安卓MaterialUI素材:<br><a href="https://github.com/CosmicMind/Material" target="_blank" rel="noopener">Material</a></li><li>上下拉:<br><a href="https://github.com/eggswift/pull-to-refresh" target="_blank" rel="noopener">pull-to-refresh</a></li><li>动画TabBarController:<br><a href="https://github.com/eggswift/ESTabBarController" target="_blank" rel="noopener">ESTabBarController</a></li><li>日历:<br><a href="https://github.com/WenchaoD/FSCalendar" target="_blank" rel="noopener">FSCalendar</a></li><li>IB动画:<br><a href="https://github.com/IBAnimatable/IBAnimatable" target="_blank" rel="noopener">IBAnimatable</a></li><li>分页标题菜单:<br><a href="https://github.com/xmartlabs/XLPagerTabStrip" target="_blank" rel="noopener">XLPagerTabStrip</a></li><li>二维码生成:<br><a href="https://github.com/EFPrefix/EFQRCode" target="_blank" rel="noopener">EFQRCode</a></li><li>滚动动画:<br><a href="https://github.com/shoheiyokoyama/Gemini" target="_blank" rel="noopener">Gemini</a></li><li>显示gif库:<br><a href="https://github.com/kaishin/Gifu" target="_blank" rel="noopener">Gifu</a></li><li>动作label:<br><a href="https://github.com/optonaut/ActiveLabel.swift" target="_blank" rel="noopener">ActiveLabel</a></li><li>字体库:<br><a href="https://github.com/Nirma/UIFontComplete" target="_blank" rel="noopener">UIFontComplete</a></li><li>版本更新提示:<br><a href="https://github.com/ArtSabintsev/Siren" target="_blank" rel="noopener">Siren</a></li><li>swift扩展库:<br><a href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="noopener">SwifterSwift</a></li><li>动态效果label:<br><a href="https://github.com/lexrus/LTMorphingLabel" target="_blank" rel="noopener">LTMorphingLabel</a></li><li>自动布局:<br><a href="https://github.com/robb/Cartography" target="_blank" rel="noopener">Cartography</a></li></ul><hr><p><a href="https://blog.csdn.net/shuoren_zhoufei/article/details/79025086" target="_blank" rel="noopener">其他未收集整理库</a></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> iOS </tag>
-            
-            <tag> swift </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+<search>
+  <entry>
+    <title><![CDATA[tar相关命令]]></title>
+    <url>%2F2019%2F08%2F30%2Ftar%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[tar tar命令详解 123tar jcf hhh.tar.bz2 hhh #压缩tar –xvf file.tar #解压 tar包tar -xzvf file.tar.gz #解压tar.gz]]></content>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[apt-get相关命令]]></title>
+    <url>%2F2019%2F08%2F30%2Fapt-get%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[123456789101112131415161718apt-get install PackageName // 普通安装apt-get --reinstall install PackageName // 重新安装apt-get build-dep PackageName // 安装相关的编译环境apt-get -f install // 修复安装apt-get source PackageName // 下载软件包的源码# 卸载apt-get remove PackageName // 保留配置文件apt-get --purge remove PackageName // 删除配置文件apt-get clean &amp;&amp; apt-get autoclean // 清理无用的包apt-get update // 更新源apt-get upgrade // 更新已安装的软件包apt-get dist-upgrade // 升级系统dpkg -l // 列出已安装的所有软件包apt-cache search PackageName // 搜索软件包apt-cache show PackageName // 获取软件包的相关信息, 如说明、大小、版本等apt-cache depends PackageName // 查看该软件包需要哪些依赖包apt-cache rdepends PackageName // 查看该软件包被哪些包依赖apt-get check // 检查是否有损坏的依赖]]></content>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[树莓派版本查询]]></title>
+    <url>%2F2019%2F08%2F26%2F%E6%A0%91%E8%8E%93%E6%B4%BE%E7%89%88%E6%9C%AC%E6%9F%A5%E8%AF%A2%2F</url>
+    <content type="text"><![CDATA[示例 12代号 型号 版本 内存 生产工厂a020d3 3B+ 1.3 1GB Sony UK Raspberry Pi 树莓派已经发布了很多个版本。每一版树莓派都有唯一的版本代号，通过下面这行命令可以查看这个代号： 1cat /proc/cpuinfo 最后三行表示主板的硬件型号、版本代号和唯一的序列号。例如： 123Hardware : BCM2835Revision : a02082Serial : 00000000765fc593 树莓派各型号]]></content>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Raspberrypi</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[定时执行任务Crontab]]></title>
+    <url>%2F2019%2F08%2F22%2F%E5%AE%9A%E6%97%B6%E6%89%A7%E8%A1%8C%E4%BB%BB%E5%8A%A1Crontab%2F</url>
+    <content type="text"><![CDATA[编辑定时任务 123crontab -e# 查看crontab服务状态sudo service cron status crontab计算时间工具]]></content>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[磁盘操作]]></title>
+    <url>%2F2019%2F08%2F22%2F%E7%A3%81%E7%9B%98%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[显示当前主机目录 1df -h fdisk操作 12fdisk -l #显示磁盘fdisk /dev/sda #分区sda 磁盘格式化 1mkfs.ext4 /dev/sda1 手工挂载 1mount /dev/xvdb1 /u01 开机自动挂载 12#/etc/fstab配置文件,末尾添加一行/dev/sda1 /u01 ext4 defaults 0 0]]></content>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git相关]]></title>
+    <url>%2F2019%2F08%2F22%2FGit%E7%9B%B8%E5%85%B3%2F</url>
+    <content type="text"><![CDATA[Git教程 Git常用命令 gitlab自建局域网仓库 12#安装完成后，把external_url改成部署机器的域名或者IP地址。sudo vim /etc/gitlab/gitlab.rb]]></content>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[swift库整理]]></title>
+    <url>%2F2019%2F08%2F16%2FSwift%E5%BA%93%E6%95%B4%2F</url>
+    <content type="text"><![CDATA[优秀库整理 列表框架 :IGListKit 数据库框架 :Realm 网路请求封装框架:Moya Json处理框架:SwiftyJSON 钥匙串读写框架:KeychainAccess 异步渲染框架:Texture 文件操作框架:FileKit 设备信息与机型框架:DeviceKit 图表框架:Charts 内购框架:SwiftyStoreKit 加密框架:CryptoSwift 异步框架:PromiseKit 特效文本输入框框架:TextFieldEffects 视图动画:ViewAnimator 网络检测:Reachability.swift 键盘遮挡:IQKeyboardManager 弹窗:PopupDialog 评分星星:Cosmos 控制路由:URLNavigator 安卓MaterialUI素材:Material 上下拉:pull-to-refresh 动画TabBarController:ESTabBarController 日历:FSCalendar IB动画:IBAnimatable 分页标题菜单:XLPagerTabStrip 二维码生成:EFQRCode 滚动动画:Gemini 显示gif库:Gifu 动作label:ActiveLabel 字体库:UIFontComplete 版本更新提示:Siren swift扩展库:SwifterSwift 动态效果label:LTMorphingLabel 自动布局:Cartography 小型弹出菜单:PopMenu 其他未收集整理库]]></content>
+      <tags>
+        <tag>iOS</tag>
+        <tag>swift</tag>
+      </tags>
+  </entry>
 </search>
