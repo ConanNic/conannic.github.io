@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[tar相关命令]]></title>
     <url>%2F2019%2F08%2F30%2Ftar%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[tar tar命令详解 123tar jcf hhh.tar.bz2 hhh #压缩tar –xvf file.tar #解压 tar包tar -xzvf file.tar.gz #解压tar.gz]]></content>
+    <content type="text"><![CDATA[tar tar命令详解 1234tar jcf hhh.tar.bz2 hhh #压缩tar –xvf file.tar #解压 tar包tar -xzvf file.tar.gz #解压tar.gztar xvJf ***.tar.xz #解压.xz，补充xz命令 (xz -d ***.tar.xz)]]></content>
       <tags>
         <tag>Linux</tag>
       </tags>
